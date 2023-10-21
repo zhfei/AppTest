@@ -10,7 +10,6 @@
 		914E5F3C2AE402B400DD018F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F3B2AE402B400DD018F /* AppDelegate.swift */; };
 		914E5F3E2AE402B400DD018F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F3D2AE402B400DD018F /* SceneDelegate.swift */; };
 		914E5F402AE402B400DD018F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F3F2AE402B400DD018F /* ViewController.swift */; };
-		914E5F432AE402B400DD018F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914E5F412AE402B400DD018F /* Main.storyboard */; };
 		914E5F452AE402B700DD018F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914E5F442AE402B700DD018F /* Assets.xcassets */; };
 		914E5F482AE402B700DD018F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914E5F462AE402B700DD018F /* LaunchScreen.storyboard */; };
 		914E5F532AE402B800DD018F /* AppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F522AE402B800DD018F /* AppTestTests.swift */; };
@@ -43,7 +42,6 @@
 		914E5F3B2AE402B400DD018F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		914E5F3D2AE402B400DD018F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		914E5F3F2AE402B400DD018F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		914E5F422AE402B400DD018F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		914E5F442AE402B700DD018F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		914E5F472AE402B700DD018F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		914E5F492AE402B700DD018F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				42C422DBF103FD00997DD68D /* Pods-AppTest.debug.xcconfig */,
 				7B1EEDA147A569A54D1F3056 /* Pods-AppTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,7 +124,6 @@
 				914E5F3B2AE402B400DD018F /* AppDelegate.swift */,
 				914E5F3D2AE402B400DD018F /* SceneDelegate.swift */,
 				914E5F3F2AE402B400DD018F /* ViewController.swift */,
-				914E5F412AE402B400DD018F /* Main.storyboard */,
 				914E5F442AE402B700DD018F /* Assets.xcassets */,
 				914E5F462AE402B700DD018F /* LaunchScreen.storyboard */,
 				914E5F492AE402B700DD018F /* Info.plist */,
@@ -260,7 +256,6 @@
 			files = (
 				914E5F482AE402B700DD018F /* LaunchScreen.storyboard in Resources */,
 				914E5F452AE402B700DD018F /* Assets.xcassets in Resources */,
-				914E5F432AE402B400DD018F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		914E5F412AE402B400DD018F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				914E5F422AE402B400DD018F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		914E5F462AE402B700DD018F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,7 +409,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -485,7 +472,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

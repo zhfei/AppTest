@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: CGRectMake(0, 0, UIScreen.main.bounds.width, UIScreen.main.bounds.height))
         window?.backgroundColor = .white
-        window?.rootViewController = ViewController()
+        window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
         return true
     }

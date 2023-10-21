@@ -15,6 +15,10 @@
 		914E5F532AE402B800DD018F /* AppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F522AE402B800DD018F /* AppTestTests.swift */; };
 		914E5F5D2AE402B800DD018F /* AppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F5C2AE402B800DD018F /* AppTestUITests.swift */; };
 		914E5F5F2AE402B800DD018F /* AppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F5E2AE402B800DD018F /* AppTestUITestsLaunchTests.swift */; };
+		914E5F6E2AE4080300DD018F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F6D2AE4080300DD018F /* MainTabBarController.swift */; };
+		914E5F702AE4086200DD018F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F6F2AE4086200DD018F /* HomeViewController.swift */; };
+		914E5F722AE4087A00DD018F /* FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F712AE4087A00DD018F /* FoundViewController.swift */; };
+		914E5F742AE4088E00DD018F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E5F732AE4088E00DD018F /* MineViewController.swift */; };
 		CA8A96419D182BCCBF1F98CC /* Pods_AppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25CF5DDC199DFEDE0CB3206 /* Pods_AppTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		914E5F582AE402B800DD018F /* AppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914E5F5C2AE402B800DD018F /* AppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITests.swift; sourceTree = "<group>"; };
 		914E5F5E2AE402B800DD018F /* AppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		914E5F6D2AE4080300DD018F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		914E5F6F2AE4086200DD018F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		914E5F712AE4087A00DD018F /* FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundViewController.swift; sourceTree = "<group>"; };
+		914E5F732AE4088E00DD018F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F25CF5DDC199DFEDE0CB3206 /* Pods_AppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +129,8 @@
 		914E5F3A2AE402B400DD018F /* AppTest */ = {
 			isa = PBXGroup;
 			children = (
+				914E5F6C2AE407DC00DD018F /* ViewControllers */,
+				914E5F6B2AE407AD00DD018F /* MainTabBarController */,
 				914E5F3B2AE402B400DD018F /* AppDelegate.swift */,
 				914E5F3D2AE402B400DD018F /* SceneDelegate.swift */,
 				914E5F3F2AE402B400DD018F /* ViewController.swift */,
@@ -146,6 +156,24 @@
 				914E5F5E2AE402B800DD018F /* AppTestUITestsLaunchTests.swift */,
 			);
 			path = AppTestUITests;
+			sourceTree = "<group>";
+		};
+		914E5F6B2AE407AD00DD018F /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				914E5F6D2AE4080300DD018F /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		914E5F6C2AE407DC00DD018F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				914E5F6F2AE4086200DD018F /* HomeViewController.swift */,
+				914E5F712AE4087A00DD018F /* FoundViewController.swift */,
+				914E5F732AE4088E00DD018F /* MineViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,9 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914E5F702AE4086200DD018F /* HomeViewController.swift in Sources */,
 				914E5F402AE402B400DD018F /* ViewController.swift in Sources */,
 				914E5F3C2AE402B400DD018F /* AppDelegate.swift in Sources */,
+				914E5F742AE4088E00DD018F /* MineViewController.swift in Sources */,
+				914E5F6E2AE4080300DD018F /* MainTabBarController.swift in Sources */,
 				914E5F3E2AE402B400DD018F /* SceneDelegate.swift in Sources */,
+				914E5F722AE4087A00DD018F /* FoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +535,6 @@
 				INFOPLIST_FILE = AppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,7 +562,6 @@
 				INFOPLIST_FILE = AppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

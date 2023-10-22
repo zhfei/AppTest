@@ -129,6 +129,10 @@
 		914E5F3A2AE402B400DD018F /* AppTest */ = {
 			isa = PBXGroup;
 			children = (
+				914E5F782AE42F3B00DD018F /* Manager */,
+				914E5F772AE42F3300DD018F /* Config */,
+				914E5F762AE42F2000DD018F /* Common */,
+				914E5F752AE42F1600DD018F /* Base */,
 				914E5F6C2AE407DC00DD018F /* ViewControllers */,
 				914E5F6B2AE407AD00DD018F /* MainTabBarController */,
 				914E5F3B2AE402B400DD018F /* AppDelegate.swift */,
@@ -174,6 +178,34 @@
 				914E5F732AE4088E00DD018F /* MineViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		914E5F752AE42F1600DD018F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		914E5F762AE42F2000DD018F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		914E5F772AE42F3300DD018F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		914E5F782AE42F3B00DD018F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
